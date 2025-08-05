@@ -244,7 +244,7 @@ export function DataSourcePanel({
                         <span className="text-gray-400">Points:</span>
                         <span>{polygon.coordinates.length}</span>
                       </div>
-                      {polygon.value !== undefined && (
+                      {polygon.value != null && (
                         <div className="flex items-center justify-between">
                           <span className="text-gray-400">Value:</span>
                           <span className="font-mono">
