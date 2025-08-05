@@ -107,6 +107,7 @@ export default function Dashboard() {
     try {
       // Clamp coordinates to valid ranges
       const clampedLat = Math.max(-90, Math.min(90, lat));
+      const clampedLon = Math.max(-180, Math.min(180, lon));
       const startStr = format(startTime, 'yyyy-MM-dd');
       const endStr = format(endTime, 'yyyy-MM-dd');
       
