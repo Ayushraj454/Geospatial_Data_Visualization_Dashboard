@@ -188,7 +188,7 @@ export default function InteractiveMap({
         layer.bindPopup(`
           <div style="color: black;">
             <strong>Polygon Data</strong><br/>
-            ${polygon.value !== undefined ? `Value: ${polygon.value.toFixed(1)}` : 'Loading...'}
+            ${polygon.value != null ? `Value: ${polygon.value.toFixed(1)}` : 'Loading...'}
           </div>
         `);
 
