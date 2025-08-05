@@ -19,7 +19,7 @@ export interface Polygon {
   id: string;
   coordinates: [number, number][];
   color: string;
-  value?: number;
+  value?: number | null;
   dataSource: string;
 }
 
